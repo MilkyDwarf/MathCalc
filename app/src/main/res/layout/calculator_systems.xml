@@ -1,0 +1,206 @@
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="1500dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Калькулятор систем"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"/>
+<RelativeLayout android:layout_width="3000dp"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="3000dp"
+        android:id="@+id/Rel1"
+        android:layout_height="wrap_content"
+        >
+    <HorizontalScrollView
+        android:layout_width="3000dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="5000dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ru.noties.jlatexmath.JLatexMathView
+                android:layout_width="84dp"
+                android:layout_height="match_parent"
+                android:id="@+id/systemSign"/>
+
+
+
+        <LinearLayout
+            android:layout_width="5000dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/Linear1"
+            android:layout_marginLeft="0dp">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:hint="Уравнение"
+                android:layout_height="40dp"
+                android:id="@+id/eq1"
+                android:textSize="20sp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:hint="Уравнение"
+                android:id="@+id/eq2"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:hint="Уравнение"
+                android:id="@+id/eq3"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:hint="Уравнение"
+                android:id="@+id/eq4"
+                android:textSize="20sp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:hint="Уравнение"
+                android:id="@+id/eq5"
+                android:textSize="20sp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:hint="Уравнение"
+                android:id="@+id/eq6"
+                android:textSize="20sp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:hint="Уравнение"
+                android:textSize="20sp"
+                android:id="@+id/eq7"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:hint="Уравнение"
+                android:id="@+id/eq8"
+                android:textSize="20sp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:hint="Уравнение"
+                android:id="@+id/eq9"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:hint="Уравнение"
+                android:id="@+id/eq10"
+                android:textSize="20sp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"/>
+
+
+
+
+
+        </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/Rel1"
+
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/minusBut"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+
+            android:text="-"
+            android:textSize="25sp" />
+        <Button
+            android:id="@+id/solve"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+
+            android:text="Решить"
+            android:textSize="14sp" />
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+
+            android:text="Очистить"
+            android:textSize="14sp" />
+        <Button
+            android:id="@+id/plusBut"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="+"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Включать комплексные корни"
+        android:textSize="22sp"
+        android:id="@+id/complexBox"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <HorizontalScrollView
+            android:layout_width="5000dp"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="5000dp"
+            android:layout_height="373dp">
+
+
+            <ru.noties.jlatexmath.JLatexMathView
+                android:layout_width="5000dp"
+                android:layout_height="373dp"
+                android:id="@+id/solveView"/>
+
+
+        </LinearLayout>
+        </HorizontalScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

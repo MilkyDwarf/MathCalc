@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_integrals_calculator">IntegralsCalculator</string>
+    <string name="title_activity_derivative_calculator" />
+    <string-array name="variables">
+        <item>x</item>
+        <item>y</item>
+        <item>z</item>
+        <item>t</item>
+        <item>w</item>
+        <item>m</item>
+        <item>n</item>
+        <item>b</item>
+        <item>v</item>
+        <item>c</item>
+        <item>l</item>
+        <item>k</item>
+        <item>j</item>
+        <item>h</item>
+        <item>g</item>
+        <item>q</item>
+        <item>f</item>
+        <item>e</item>
+        <item>d</item>
+        <item>s</item>
+        <item>u</item>
+        <item>a</item>
+        <item>r</item>
+        <item>i</item>
+        <item>o</item>
+        <item>p</item>
+
+
+    </string-array>
+    <string name="title_activity_determinator_calculator">DeterminatorCalculator</string>
+</resources>

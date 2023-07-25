@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Калькулятор производных"
+        android:layout_centerHorizontal="true"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:id="@+id/titleText"/>
+
+    <HorizontalScrollView
+        android:layout_width="4000dp"
+        android:layout_height="320dp"
+        android:layout_below="@+id/titleText"
+        android:layout_marginTop="10dp"
+        android:id="@+id/horizontal1">
+
+
+        <RelativeLayout
+            android:layout_width="4000dp"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/linearDDx"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+
+
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="48dp"
+                    android:hint="Порядок(n)"
+                    android:id="@+id/nEditText"/>
+
+                <ru.noties.jlatexmath.JLatexMathView
+                    android:layout_width="wrap_content"
+                    android:layout_height="220dp"
+                    android:id="@+id/DerrDedign" />
+
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="48dp"
+                    android:hint="Переменная"
+                    android:id="@+id/varEditText"/>
+
+
+
+
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:hint="Функция"
+                android:id="@+id/function"
+                android:layout_toRightOf="@+id/linearDDx"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/horizontal1"
+        android:id="@+id/linear2"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Найти производную"
+            android:id="@+id/sButton"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Очистить"
+            android:id="@+id/clearButton"
+            android:layout_marginLeft="23dp" />
+
+    </LinearLayout>
+
+
+    <HorizontalScrollView
+        android:layout_width="4000dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/linear2" >
+        <RelativeLayout
+            android:layout_width="2500dp"
+            android:layout_height="200dp" >
+
+
+        <ru.noties.jlatexmath.JLatexMathView
+            android:layout_width="2500dp"
+            android:layout_height="match_parent"
+            android:id="@+id/solveAndVis" />
+        </RelativeLayout>
+
+
+
+    </HorizontalScrollView>
+
+
+</RelativeLayout>
