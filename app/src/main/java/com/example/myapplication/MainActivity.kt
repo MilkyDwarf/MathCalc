@@ -108,10 +108,6 @@ class MainActivity : ComponentActivity() {
             val myIntent = Intent(this@MainActivity, SystemsCalculator::class.java)
             startActivity(myIntent)
         }
-        button3.setOnClickListener {
-            val myIntent = Intent(this@MainActivity, DoubleIntegralsCalculator::class.java)
-            startActivity(myIntent)
-        }
 
         //..........................
 
